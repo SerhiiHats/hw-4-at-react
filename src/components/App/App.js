@@ -2,6 +2,7 @@ import {Component} from "react";
 import './App.css';
 import Header from "../Header/Header";
 import ObjectLike from "../ObjectLike/ObjectLike";
+import CounterFromUpdate from "../CounterFromUpdate/CounterFromUpdate";
 
 
 
@@ -32,8 +33,8 @@ class App extends Component{
       <div className="App">
         <Header aboutTask={this.state.aboutTask1} descriptionTask={this.state.descriptionTask1}/>
         <ObjectLike handlerLike={()=>this.handlerLike()} visible={this.state.visibleLike}/>
-
-
+        <Header aboutTask={this.state.aboutTask2} descriptionTask={this.state.descriptionTask2}/>
+        <CounterFromUpdate/>
       </div>
     );
   }

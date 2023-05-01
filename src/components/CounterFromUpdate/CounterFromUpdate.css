@@ -1,0 +1,17 @@
+.CounterFromUpdate{
+    background-color: #B5C266;
+    color: #505050;
+    padding: 10px;
+}
+
+.CounterFromUpdate .Counter{
+    width: 80px;
+    height: 80px;
+    border: 2px solid grey;
+    margin: 10px auto;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    font-size: 60px;
+    background-color: #f1f1f1;;
+}
+
