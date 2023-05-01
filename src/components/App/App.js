@@ -1,6 +1,7 @@
 import {Component} from "react";
 import './App.css';
 import Header from "../Header/Header";
+import ObjectLike from "../ObjectLike/ObjectLike";
 
 
 
@@ -16,12 +17,21 @@ class App extends Component{
     arrayNames: ["Анатолій", "Анатолій", "Буревій", "Анатолій", "Вероніка", "Буревій", "Кристина", "Ольга", "Сергій", "Анатолій", "Вероніка", "Сергій"],
     arrayOfRainbow1: ["red", "orange", "yellow", "green", "blue", "indigo", "violet"],
     arrayOfRainbow2: ["indigo"],
+    visibleLike: false,
+  }
+
+  handlerLike(){
+    const {visibleLike} = this.state;
+    this.setState({
+      visibleLike: !visibleLike
+    })
   }
 
   render() {
     return (
       <div className="App">
         <Header aboutTask={this.state.aboutTask1} descriptionTask={this.state.descriptionTask1}/>
+        <ObjectLike handlerLike={()=>this.handlerLike()} visible={this.state.visibleLike}/>
 
 
       </div>
