@@ -1,10 +1,10 @@
-.CounterFromUpdate{
+.UpdateCounter{
     background-color: #B5C266;
     color: #505050;
     padding: 10px;
 }
 
-.CounterFromUpdate .Counter{
+.UpdateCounter .Counter{
     width: 80px;
     height: 80px;
     border: 2px solid grey;
@@ -13,5 +13,6 @@
     text-align: center;
     font-size: 60px;
     background-color: #f1f1f1;;
+    user-select: none;
 }
 

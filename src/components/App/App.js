@@ -2,7 +2,7 @@ import {Component} from "react";
 import './App.css';
 import Header from "../Header/Header";
 import ObjectLike from "../ObjectLike/ObjectLike";
-import CounterFromUpdate from "../CounterFromUpdate/CounterFromUpdate";
+import UpdateCounter from "../UpdateCounter/UpdateCounter";
 
 
 
@@ -34,7 +34,8 @@ class App extends Component{
         <Header aboutTask={this.state.aboutTask1} descriptionTask={this.state.descriptionTask1}/>
         <ObjectLike handlerLike={()=>this.handlerLike()} visible={this.state.visibleLike}/>
         <Header aboutTask={this.state.aboutTask2} descriptionTask={this.state.descriptionTask2}/>
-        <CounterFromUpdate/>
+        <UpdateCounter/>
+        <Header aboutTask={this.state.aboutTask3} descriptionTask={this.state.descriptionTask3}/>
       </div>
     );
   }

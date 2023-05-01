@@ -1,7 +1,7 @@
 import {Component} from "react";
-import "./CounterFromUpdate.css"
+import "./UpdateCounter.css"
 
-class CounterFromUpdate extends Component {
+class UpdateCounter extends Component {
   key = true;
   state = {
     count: 0,
@@ -16,10 +16,9 @@ class CounterFromUpdate extends Component {
       })
     }
     this.key = !flag;
-    console.log("componentDidUpdate")
   }
 
-  hanlerFlag() {
+  toggleFlag() {
     const {flag} = this.state;
     this.setState({flag: !flag});
     this.key = !flag;
@@ -28,7 +27,7 @@ class CounterFromUpdate extends Component {
   render() {
     const {count} = this.state;
     return (
-      <div onClick={() => this.hanlerFlag()} className={"CounterFromUpdate"}>
+      <div onClick={()=>this.toggleFlag()} className={"UpdateCounter"}>
         <p>Click this div for update Counter</p>
         <div className={"Counter"}>{count}</div>
       </div>
@@ -36,4 +35,4 @@ class CounterFromUpdate extends Component {
   }
 }
 
-export default CounterFromUpdate
+export default UpdateCounter
