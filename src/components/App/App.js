@@ -3,6 +3,7 @@ import './App.css';
 import Header from "../Header/Header";
 import ObjectLike from "../ObjectLike/ObjectLike";
 import UpdateCounter from "../UpdateCounter/UpdateCounter";
+import UpdateCounterCondition from "../UpdateCounterCondition/UpdateCounterCondition";
 
 
 
@@ -36,6 +37,7 @@ class App extends Component{
         <Header aboutTask={this.state.aboutTask2} descriptionTask={this.state.descriptionTask2}/>
         <UpdateCounter/>
         <Header aboutTask={this.state.aboutTask3} descriptionTask={this.state.descriptionTask3}/>
+        <UpdateCounterCondition/>
       </div>
     );
   }
