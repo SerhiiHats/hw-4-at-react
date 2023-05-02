@@ -1,18 +1,22 @@
-.UpdateCounter{
+.UpdateCounter {
     background-color: #B5C266;
     color: #505050;
     padding: 10px;
+    text-align: center;
 }
 
-.UpdateCounter .Counter{
-    width: 80px;
+.UpdateCounter p {
+    text-align: left
+}
+
+.UpdateCounter .Counter {
+    min-width: 80px;
     height: 80px;
     border: 2px solid grey;
     margin: 10px auto;
     padding: 10px 10px 0 10px;
-    text-align: center;
     font-size: 60px;
-    background-color: #f1f1f1;;
+    background-color: #f1f1f1;
     user-select: none;
+    display: inline-block;
 }
-
