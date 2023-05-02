@@ -2,26 +2,26 @@ import {Component} from "react";
 import "./UpdateCounter.css"
 
 class UpdateCounter extends Component {
-  key = true;
+  key = false;
   state = {
     count: 0,
     flag: false,
   }
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    const {count, flag} = this.state;
-    if (this.key === flag) {
+  componentDidUpdate(prevProps, prevState, snapshot) {    
+    if (this.key) {
+      const {count} = this.state;
       this.setState({
         count: count + 1,
       })
-    }
-    this.key = !flag;
+       this.key = false;
+    }   
   }
 
   toggleFlag() {
     const {flag} = this.state;
     this.setState({flag: !flag});
-    this.key = !flag;
+    this.key = true;
   }
 
   render() {
